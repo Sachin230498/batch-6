@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #maincontainer{
+        background-color: aliceblue;
+    }
+    #navbar{
+        display:flex;
+       background-color: beige;
+        height: 50px;
+        border-radius :50px;
+    }
+    .nav-logo{
+        width: auto;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(66, 63, 63);
+        margin-left: 50px;
+        height: fit-content;
+     
+        
+    }
+    .nav-logo:hover{
+        border-bottom: solid 2px blue;
+    }
+    #nav-items{
+        display: flex;
+        margin-left: 40%;
+        width: fit-content;
+       
+    }
+    .nav-item{
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+      
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        border: solid 2px;
+        margin-top: 50px;
+       
+    }
+    .img-block-1{
+        padding-left: 50px;
+        border: solid 2px;
+    }
+    .img-block-1>img{
+        height: 400px;
+        max-width: 400px;
+        object-fit: cover;
+    }
+    .img-block-2{
+        padding-left: 50px;
+    }
+    .img-block-2>div>p{
+        font-size: 20px;
+    }
+    .img-block-2>div>button{
+        padding: 10px;
+        width: 150px;
+        border-radius: 20px 20px;
+        background-color: rgb(218, 215, 49);
+        color: white;
+        font-weight: bold;
+        border: none;
+        margin-top: 30px;
+    }
+    #icon{
+        display: flex;
+        width: fit-content;
+
+    }
+    #icon>div{
+         height: 40px;
+         width: 40px;
+      
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(201, 195, 195);
+        }
+    #icon>div>i{
+       font-size: 20px;
+    }
+    .container-2{
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+
+    }
+    .container-2>div{
+        padding: 20px;
+    }
+    .container-2>div>img{
+        max-width: 300px;
+        height: 300px;
+        border-radius: 20px 20px;
+    }
+    .container-2>div{
+        margin-top: 20px;
+        
+    }
+    .detail>.col-md>div{
+        display: flex;
+
+    }
+    .detail>.col-md>div>div{
+        margin-left: 30px;
+      
+    }
+    .services{
+        max-width: 1000px;
+        margin:auto;
+        margin-top: 50px;
+    }
+    .services>h1,p{
+        display: flex;
+        justify-content: center;
+
+    }
+    .services>.row>.col-md>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        margin-top: 20px;
+    
+
+
+    }
+    .services>.row>.col-md>div>i{
+        font-size: 50px;
+       
+        
+    }
+    .services>.row>.col-md{
+    
+        height: fit-content;
+        width: 100px;
+        padding: 10px;
+        display: grid;
+        justify-content: center;
+    }
+    .services-icon{
+   
+        height: 70px;
+        width: 70px;
+        border: solid 2px;
+        
+    }
+    .img-block-2>div>p{
+       
+        display: flex;
+        justify-content: start;
+    }
+
+</style>
+<body>
+    
+    <div id = "maincontainer">
+        <nav id = "navbar" >
+            <div class="nav-logo">
+                portfolio
+            </div>
+            <div id = "nav-items">
+                <div class = "nav-item">About</div>
+                <div class = "nav-item">service</div>
+                <div class = "nav-item">Skills</div>
+                <div class = "nav-item">Expertise</div>
+            </div>
+        </nav>
+
+    <div class = "container">
+        <div class ="img-block-1">
+            <img src="https://media.istockphoto.com/id/1216481372/photo/young-men-relaxing-on-bean-bag-chair-on-white-background-stock-photo.jpg?s=1024x1024&w=is&k=20&c=MGEkU1ay_F6ggNrqc5Z6YnSOnbt7M7r2OIQO30oPvoI=" alt="">
+        </div>
+
+        <div class ="img-block-2">
+            <div>
+                <p>Hello!</p>
+            </div>
+
+            <div>
+                <h1>I am Abhishek</h1>
+
+            </div>
+            <div>
+                <p>Web Developer & Mobile Application Developer</p>
+            </div>
+            <div id="icon">
+                <div class ="icons rounded-circle">
+                    <i class = "fa fa-twitter"></i>
+                 
+                </div>
+                <div class ="icons rounded-circle"> <i class = "fa fa-whatsapp "></i>
+                </div>
+                <div class ="icons rounded-circle"> <i class = "fa fa-facebook"></i>
+                </div>
+                <div class ="icons rounded-circle"> <i class = "fa fa-instagram"></i>
+                </div>
+                <div class ="icons rounded-circle"> <i class = "fa fa-snapchat"></i>
+                </div>
+            </div>
+            <div>
+                <button>Get In Touch --></button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-2">
+        
+        <div>
+            <div>
+                <h1>Hello! I am Walter Patterson.</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus placeat porro et id est commodi? Dicta, fuga labore sunt commodi repellendus dolorum ex impedit laborum error magnam, voluptatibus placeat!</p>
+            </div>
+            <div class ="detail">
+                <div class ="col-md">
+                    <div>
+                        <div>
+                            <div>
+                                Age
+                            </div>
+                            <div>
+                                Email
+                              </div>
+                              <div>
+                                Phone
+        
+                            </div>
+                            <div>
+                                Adress
+        
+                            </div>
+                            <div>
+                                Status
+        
+                            </div>
+
+                        </div>
+                        <div>
+                            <div>29</div>
+                            <div>ajnajsn@gmail.com</div>
+                            <div>6465645454</div>
+                            <div>Indore</div>
+                            <div>Available</div>
+
+                        </div>
+                    </div>
+                  
+                   
+                   
+               
+                   
+                                     
+
+                </div>
+               
+            </div>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/2032671651/photo/man-at-computer-glasses-and-reflection-thinking-and-reading-email-review-or-article-at.jpg?s=612x612&w=0&k=20&c=n8qYXzJPvufOHIieQUqkPO8q0tuUltHzPQEvK1QP6uA=">
+        </div>
+    </div>
+        <div class = "services">
+            <h1>My Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officiis adipisicing elit. Libero officiis </p>
+            <div class ="row">
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-css3"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa  fa-github"></i>
+                    </div>
+                    <div>
+                        Git hub
+                    </div>
+                </div>
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-facebook"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+                <div class = "col-md ">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-facebook"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "services">
+            <h1>My Skills</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officiis adipisicing elit. Libero officiis </p>
+            <div class ="row">
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-css3"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa  fa-github"></i>
+                    </div>
+                    <div>
+                        Git hub
+                    </div>
+                </div>
+                <div class = "col-md">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-facebook"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+                <div class = "col-md ">
+                    <div class="services-icon rounded-circle">
+                        <i class ="fa fa-facebook"></i>
+                    </div>
+                    <div>
+                        Web Design
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
