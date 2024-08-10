@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-container{
+        width: 250px;
+     
+        margin: auto;
+        height: auto;
+        padding: 30px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-top: 200px;
+
+     
+    }
+    .main-container>div{
+        width: 250px;
+      
+       
+    }
+    .main-container>div>input{
+        width: 95%;
+        border-radius: 10px 10px;
+        height: 40px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: none;
+        display: flex;
+        place-content: center;
+        align-items: center;
+
+    }
+    .item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+      
+        margin-top: 20px;
+    }
+    .item>div{
+        width: 50px;
+        height: 50px;
+   
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+       border-radius: 10px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-weight: bold;
+
+    }
+    .item>.div:nth-child(4){
+        background-color: black;
+        color: white;
+    }
+    .item>div:nth-child(12){
+        background-color: black;
+        color: white;
+    }
+    .item>div:nth-child(15){
+        background-color: black;
+        color: white;
+    }
+    .item>div:nth-child(16){
+        background-color: black;
+        color: white;
+    }
+    .item>div:nth-child(13){
+        background-color: red;
+        color: white;
+    }
+  
+  
+</style>
+<body>
+    <div class="main-container">
+    
+        <div>
+            <input type = "text" id = "input" />
+        </div>
+        <div class="item">
+            <div class = "items" value="1">1</div>
+            <div  class = "items" value="2">2</div>
+            <div  class = "items" value="3">3</div>
+            <div  class = "items" value="+">+</div>
+            <div  class = "items" value="5">4</div>
+            <div  class = "items" value="6">5</div>
+            <div  class = "items" value="7">6</div>
+            <div  class = "items"  value = "-"style="background-color: black; color: white;">-</div>
+            <div  class = "items" value ="7">7</div>
+            <div  class = "items" value = "8">8</div>
+            <div  class = "items" value="9">9</div>
+            <div  class = "items" value = "*">*</div>
+            <div  class = "items" value = "C">C</div>
+            <div  class = "items" value = "0">0</div>
+            <div  class = "items" value = "=">=</div>
+            <div  class = "items" value = "/">/</div>
+        </div>
+        
+    </div>
+    <script>
+        let items = document.getElementsByClassName("items");
+        Array.from(items).forEach(function(element){
+            element.addEventListener("click", function(elements){
+                let num = elements.target.getAttribute("value");
+                if(num == "="){
+                    let value = document.getElementById("input");
+                    console.log(value.value)
+                    let calculate = eval(value.value);
+                    document.getElementById("input").value = " ";
+                    console.log(calculate);
+                    document.getElementById("input").value = calculate;
+                    return;
+
+                }
+                if(num == "C"){
+                    document.getElementById("input").value = " ";
+                    return;
+
+                }
+                
+            
+                document.getElementById("input").value += num;
+                
+              
+            })
+        })
+
+    </script>
+    
+</body>
+</html>
