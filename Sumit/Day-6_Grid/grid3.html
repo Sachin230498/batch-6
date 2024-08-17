@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: whitesmoke;
+            }
+            #main {
+                width: 900px;
+                margin: auto;
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+            }
+            #heading {
+                text-align: center;
+                margin-top: 20px;
+            }
+            #heading > p {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #logo-icon {
+                margin-top: 15px;
+                padding: 0 70px;
+                display: flex;
+                justify-content: space-between;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 10%;
+            }
+            #logo-1 {
+                height: 100px;
+                width: 120px;
+                /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            }
+            #logo-2 {
+                height: 100px;
+                width: 120px;
+                /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            }
+            #logo-3 {
+                height: 100px;
+                width: 150px;
+                /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            }
+            #logo-1 > img,
+            #logo-2 > img,
+            #logo-3 > img {
+                height: 100%;
+                width: 100%;
+            }
+            #investors-head {
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                margin: 40px 0 25px 0;
+            }
+            #inv-container {
+                margin: auto;
+                height: 1560px;
+                width: 900px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 15px;
+            }
+            .blocks {
+                text-align: center;
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 10px;
+            }
+
+            .div-1 {
+                height: 200px;
+                border-radius: 10px;
+            }
+            .div-1 > img {
+                height: 100%;
+                width: 100%;
+            }
+            .div-2 {
+                height: 10%;
+                font-weight: bold;
+                margin-top: 5px;
+                font-size: 18px;
+            }
+            .div-3 {
+                height: 10%;
+                margin-top: 5px;
+            }
+            .div-4 {
+                height: 40px;
+                width: 50%;
+                margin: auto;
+            }
+            .div-4 > img {
+                height: 100%;
+                width: 100%;
+            }
+            @media {
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <!-- Heading -->
+            <div id="heading">
+                <p>Board Members</p>
+            </div>
+
+            <!-- Logo-icons -->
+            <div id="logo-icon">
+                <div id="logo-1">
+                    <img
+                        src="https://scontent.fidr1-1.fna.fbcdn.net/v/t39.30808-1/327146787_588042296472201_8976944126080226324_n.png?_nc_cat=107&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=bb60sC9how4Q7kNvgGscJSb&_nc_ht=scontent.fidr1-1.fna&oh=00_AYBZwohm4i7jMsVqiVfNto8S9q7x_ZkTxq9gh0Y-xFXEZQ&oe=66C4C1C5"
+                    />
+                </div>
+                <div id="logo-2">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCrvR3KALVfj7YgDe3kbrYLoEEDbmoJ7caluu9ajw3bvTmPZqKwnWvqbRVRQ&s"
+                    />
+                </div>
+                <div id="logo-3">
+                    <img
+                        src="https://cdn.landesa.org/wp-content/uploads/omidyar-network-india-logo.png"
+                    />
+                </div>
+            </div>
+
+            <!-- Investors Heading -->
+            <div id="investors-head">
+                <p>Strategic Investors</p>
+            </div>
+
+            <!-- Inv-container -->
+            <div id="inv-container">
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://cdn.unenvironment.org/s3fs-public/styles/ex/public/people/2017-12/Vijay_Shah.jpg?h=78db210b&itok=gWVXMbu8"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Vijay Shekhar Sharma</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://internationalfinance.com/wp-content/uploads/2023/03/ifm-cred-ceo-kunal-shahs-extremely-low-salary.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Kunal Shah</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYuhG_ObXr_vKT-zBW5nEd6COHHQ-Nfd86A&s"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Amrish Rau</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmVn8SVnxWLU6LUNSCBHz6AptJ9STvJt2AXQ&s"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Sampad Swain</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/Sharechat-CEO-1713163745250.png?fm=auto&ar=2:1&mode=crop&crop=faces"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Ankush Sachdeva</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://assets.entrepreneur.com/content/3x2/2000/1615887248-BhanuPratapSingh.JPG?format=pjeg&auto=webp&crop=1:1"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Bhanu Pratap Singh</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://cdn.prod.website-files.com/6410c4927a4ae326761f2b26/6410fa171714e44cf7cd717e_60eddf45a80617321a7899c1_5f30f651c83f5b08641867b1_28%2525252525252054%25252525252520Farid%25252525252520Ahsan.webp"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Farid Ahsan</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://pbs.twimg.com/profile_images/631516973730390016/MVR7x3AG_400x400.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Amit Kumar Agarwal</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlAKaJcKcqW_w6xaKwtYANU46lwnkMWu4KQ&s"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Akhil Gupta</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCt5xqHOs9P3nkqWLVl6j8MKeBrwTNQ642og&s"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Sourabh Garg</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://media.licdn.com/dms/image/C5103AQHvhMmpg0wB0Q/profile-displayphoto-shrink_200_200/0/1559070088897?e=2147483647&v=beta&t=D6WwhGbrVjAiB7FFY5J5mGA8Isg42XoXHRfN-aetfC8"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Vipin Pathak</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://media.licdn.com/dms/image/v2/C5103AQHvoWJeXu_foA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1523475325527?e=2147483647&v=beta&t=FI8zQP_UEqUiPumH9hBvQJC0UGKqSH35vdo-xw_u1c0"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">Ramakant Sharma</div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://media.licdn.com/dms/image/v2/C4D03AQHzBg6tdvrMGw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1618725411913?e=2147483647&v=beta&t=73hj6sYMgWFh1PlN6rnj4MWWvrHUyV4mi-iT06k0XfI"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Mohit Tandon</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://media.licdn.com/dms/image/v2/C5603AQHQADEsJ3WayQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1600075955805?e=2147483647&v=beta&t=0LOWkcLqDbMDIe4DZq_dLVq9zzBpjz0ITR6K_eB3FHA"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Abhishek Goyal</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://images.thecompanycheck.com/directorimage/ANURAG_JAIN_0f5h9z431sd.webp"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Anurag Jain</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://cxotoday.com/wp-content/uploads/2023/11/Harshvardhan-Lunia-FCC-Chair.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Harshvardhan Lunia</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/investor-profile-photos/I_902594.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Sunial Rao</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://media.licdn.com/dms/image/C5603AQECM8Uam-AJ-A/profile-displayphoto-shrink_200_200/0/1645622762306?e=2147483647&v=beta&t=4r7ioUhgMTGgeHDlmPhRvCmZiNXNfcyPcT9Qfi8Qopg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Sharda Balaji</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjNZJU5HfWz0tBCxAgeY63f8pTqWrIegB4g&s"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="blocks">
+                        <div class="div-1">
+                            <img
+                                src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/investor-profile-photos/I_901303.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="div-2">
+                            <p>Kulin Shah</p>
+                        </div>
+                        <div class="div-3">Founder & CTO</div>
+                        <div class="div-4">
+                            <img
+                                src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

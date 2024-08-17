@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            #main {
+                height: 200px;
+                width: 350px;
+                margin: auto;
+                padding: 10px 15px;
+                margin-top: 100px;
+                background-color: bisque;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+            #container {
+                margin: auto;
+                display: grid;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+
+                grid-template-areas:
+                    "A A B B"
+                    "C D D D"
+                    "E E E E";
+            }
+            #container > :nth-child(1) {
+                grid-area: A;
+            }
+            #container > :nth-child(2) {
+                grid-area: B;
+            }
+            #container > :nth-child(3) {
+                grid-area: C;
+            }
+            #container > :nth-child(4) {
+                grid-area: D;
+            }
+            #container > :nth-child(5) {
+                grid-area: E;
+            }
+            .block {
+                background-color: grey;
+                height: 40px;
+                border-radius: 3px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="container">
+                <div class="block">A</div>
+                <div class="block">B</div>
+                <div class="block">C</div>
+                <div class="block">D</div>
+                <div class="block">E</div>
+            </div>
+        </div>
+    </body>
+</html>
