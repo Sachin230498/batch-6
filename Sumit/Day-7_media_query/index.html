@@ -17,7 +17,7 @@
                 max-width: 1100px;
                 margin: auto;
                 padding-bottom: 50px;
-            }
+            }   
             #banner {
                 width: 100%;
                 max-height: 200px;
@@ -148,6 +148,10 @@
                     grid-template-rows: repeat(2, 1fr);
                     gap: 35px;
                 }
+                #work-section{
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                }
             }
             @media all and (min-width: 328px) and (max-width: 479px) {
                 #banner {
@@ -168,8 +172,18 @@
                     width: 50px;
                     font-size: 8px;
                 }
+                #services{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                #work-section{
+                    grid-template-columns: repeat(2, 1fr);
+                    height: 350px;
+                }
+                .w-text {
+                    padding: 5px 5px;
+                }
             }
-        </style>
+            </style>
     </head>
     <body>
         <div id="main">
