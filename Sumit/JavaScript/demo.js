@@ -1,28 +1,18 @@
-// Quetion :19
-// Find the first P Prime Numbers Greator than N
-let arr19 = [];
-let index19 = 0;
-let primeCount19 = 15;
-let num = 15;
-let func19 = function (num, primeCount19, arr19) {
-    if (num == 2) {
-        arr19[index19] = num;
-        index19++;
-        // console.log(arr19);
-    } else {
-        for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                num++;
-                func19(num, primeCount19, arr19);
-            }
+// Question : 24
+// Create a function that will merge two array and return
+let arr1 = [1, 5, 8, 7, 4, 9, 6];
+let arr2 = [45, 15, 87, 4, 5];
+let func24 = function (arr1, arr2) {
+    let merge_arr = [];
+    let ind = 0;
+    for (let i = 0; i < arr1.length + arr2.length; i++) {
+        if (i < arr1.length) {
+            merge_arr[i] = arr1[i];
+        } else {
+            merge_arr[i] = arr2[ind];
+            ind++;
         }
     }
-    while (arr19.length < primeCount19) {
-        arr19[index19] = num;
-        index19++;
-        num++;
-        func19(num, primeCount19, arr19);
-    }
+    console.log(merge_arr);
 };
-func19(num, primeCount19, arr19);
-console.log(arr19);
+func24(arr1, arr2);
